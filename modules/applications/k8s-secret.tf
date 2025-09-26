@@ -18,6 +18,7 @@ resource "kubernetes_secret" "docker_registry" {
       }
     })
   }
+
 }
 
 resource "kubernetes_secret" "db" {
@@ -34,4 +35,5 @@ resource "kubernetes_secret" "db" {
   }
 
   type = "Opaque"
+  
 }
